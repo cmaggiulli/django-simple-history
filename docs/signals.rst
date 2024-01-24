@@ -54,16 +54,16 @@ To connect the signals to your callbacks, you can use the ``@receiver`` decorato
 
     @receiver(pre_create_historical_record)
     def pre_create_historical_record_callback(sender, **kwargs):
-        print("Sent before saving historical record")
+        print("Sent before creation of historical record")
 
     @receiver(post_create_historical_record)
     def post_create_historical_record_callback(sender, **kwargs):
-        print("Sent after saving historical record")
+        print("Sent after creation of historical record")
 
     @receiver(pre_create_historical_m2m_records)
     def pre_create_historical_m2m_records_callback(sender, **kwargs):
-        print("Sent before saving many to many field on historical record")
+        print("Sent before creation of many to many field on historical record")
 
     @receiver(post_create_historical_m2m_records)
     def post_create_historical_m2m_records_callback(sender, **kwargs):
-        print("Sent after saving many to many field on historical record")
+        print("Sent after creation of many to many field on historical record")
